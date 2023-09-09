@@ -5,29 +5,38 @@
 </p>
 
 
+<h2>description</h2>
+<p>this repo contains two packages. my_client_package written in python and listener_package written in c++.</p>
+
+
+<p>my client package contains two nodes (talker,listener). talker and listener use publisher(talker)/subscription(listener) model to send and receive strings under the topic of 'new_message'</p>
+
+<p>listener package only contains listener_cpp node. listener_cpp uses to catch strings send under the 'new_messages' topic.</p>
+
 <h2>Before running</h2>
 
-<p>make sure ROS2 is installed on your system. if not you can flow <a href="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html">this guid</a> to install it</p>
+<p>make sure ROS2 is installed on your system. if not you can follow <a href="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html">this guide</a> to install it</p>
 
-<p>If you don't have access to linux system you can use wsl on windows. All the commands are the same and tested in wsl and it worked 100% fine. for wsl installaion you can flow <a href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview">this guid</a></p>
+<p>If you don't have access to linux system you can use wsl on windows. All the commands are the same and tested in wsl. for wsl installaion you can follow <a href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview">this guide</a></p>
 
 
-<h2>Runnig the code</h2>
 
-<p>setting up the rus enviroment</p>
 
-> source /opt/ros/humble/setup.bash
+<h2>runnig the code</h2>
 
-<p>install required dependencies</p>
+<p>compiling</p>
+<p>go to director of the package you want to compile and run the following comand</p>
 
-> cd ./cpp
+> colcon build
 
-> rosdep install -i --from-path src --rosdistro humble -y
 
-> cd ../python
+<p>local installion</p>
 
-> rosdep install -i --from-path src --rosdistro humble -y
+> source install/local_setup.bash
 
+<p>running</p>
+
+> ros2 run <package> <node>
 
 <h2>Problems and requests</h2>
 
