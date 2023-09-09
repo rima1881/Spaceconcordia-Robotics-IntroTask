@@ -5,7 +5,7 @@
 </p>
 
 
-<h2>description</h2>
+<h2>Description</h2>
 <p>this repo contains two packages. my_client_package written in python and listener_package written in c++.</p>
 
 
@@ -22,19 +22,19 @@
 
 
 
-<h2>runnig the code</h2>
+<h2>Runnig the code</h2>
 
 <p>compiling</p>
-<p>go to director of the package you want to compile and run the following comand</p>
+<p>go to the directory of the package you want to compile and run the following command</p>
 
 > colcon build
 
 
-<p>local installion</p>
+<p>Local installion</p>
 
 > source install/local_setup.bash
 
-<p>running</p>
+<p>Running</p>
 
 > ros2 run <package> <node>
 
