@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_client = my_client_package.my_client:main'
+            'listener = my_client_package.listener:main',
+            'talker = my_client_package.talker:main'
         ],
     },
 )
